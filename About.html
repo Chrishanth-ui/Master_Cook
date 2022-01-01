@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="css/About.css">
+        <link rel="icon" type="image/x-icon" href="images/cook.ico">
+        <style type="text/CSS">
+            p{
+                font-size: 20px;
+                margin: 25px 0;
+                color: #fff;
+                text-align: center;
+            }
+            footer .wave{
+    
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+
+
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_2
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="main" style=" background:linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(images/about.JPG);
+                                    width: 100%;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    align-items: center;
+                                    justify-content: center;">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Recipe.html">Receipe</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="Content">
+                <h1 style="font-size: 70px; color: #fff; margin-top: 100px; text-align: center; "> Let’s Eat Together! </h1>
+                <p style="color: #fff;"> It’s not true that money can’t buy happiness.<br> I mean, have you tried buying ice cream? It’s the same thing! </p>
+            </div>
+
+            <div class="us">
+                <div class="pic">
+                    <img style=" transform: translateX(570px);
+                    justify-content: center;
+                    align-items: center;"
+                     src="images/logo.png">
+                </div>
+            </div>
+
+            <div class="goal">
+                <h2>Goal of this website is to give a delicious and decorative food ideas </h2>
+            </div>
+
+            <div class="para">
+                <p>Our classic all-American menu will be sure to please guests of all ages, and we offer<br> special quarterly burgers and wing sauces to please the palates of even the most<br> experienced burger and chicken wing connoisseurs.</p>
+            </div>
+
+            <footer> 
+
+                <p>@2021 Master cook | All Rights Reserved</p>
+    
+                <div class="waves">
+                 <div class="wave" id="wave1"></div>
+                 <div class="wave" id="wave2"></div>
+                 <div class="wave" id="wave3"></div>
+                 <div class="wave" id="wave4"></div>
+                </div>
+             </footer>
+    
+
+    </body>
+</html>

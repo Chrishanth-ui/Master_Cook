@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/Recipe.css"/>
+    <link rel="icon" type="image/x-icon" href="images/cook.ico">
+    <style type="text/CSS">
+        p{
+            font-size: 20px;
+            margin: 25px 0;
+            color: #fff;
+            text-align: center;
+        }
+        footer .wave{
+
+position: absolute;
+top: -100px;
+left: 0px;
+width: 100%;
+height: 100px;
+background: url(images/wave.png);
+background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+z-index: 1000;
+opacity: 1;
+bottom: 0;
+animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+z-index: 999;
+opacity: 0.5;
+bottom: 10px;
+animation: animateWave_2 3s linear infinite;
+}
+
+footer .wave#wave3{
+z-index: 1000;
+opacity: 0.2;
+bottom: 15px;
+animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+z-index: 999;
+opacity: 0.7;
+bottom: 20px;
+animation: animateWave_2 4s linear infinite;
+}
+
+
+
+@keyframes animateWave
+{
+0%
+{
+    background-position-x: 1000px;
+}
+100%
+{
+    background-position-x: 0px;
+}
+}
+
+@keyframes animateWave_2
+{
+0%
+{
+    background-position-x: 0px;
+}
+100%
+{
+    background-position-x: 1000px;
+}
+}
+
+    </style>
+    </head>
+
+    <body style="width: 100vw;
+                height: 100vh;
+                align-items: center;
+                background-position-y: center;
+                background-size: cover;
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url(recipe.JPG);
+                justify-content: center;
+                margin: 0;">
+
+        <div class="home">
+            <a href="index.html">
+                <button type="button" style="background-color: green; font-size: small; border: none; color: #fff; ">HOME</button>
+            </a>
+        </div>
+        
+        <div class="flex">
+            <div class="card">
+                <div class="card-img" style="background: url(images/africa.JPG);  background-size:cover; background-position-y: center;"></div>
+                <div class="card-txt">
+                    <span class="date"> 4 days ago</span>
+                    <h2>African Style</h2>
+                    <p> Madesu beans are a staple in Central Africa · Ntaba Central African-style lamb barbecue · Ugali is pictured here with a side dish of cabbage, though it is more.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="pdf/africa.html" target="blank">
+                        <button type="button">VIEW</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img" style="background: url(images/bread.JPG);  background-size:cover; background-position-y: center;"></div>
+                <div class="card-txt">
+                    <span class="date"> 10 days ago</span>
+                    <h2>Garlic Bread</h2>
+                    <p> Toast split bread under broiler. Remove bread when it is toasted golden brown in color. Brush bread liberally with garlic oil. Sprinkle with cheese, if using, and parsley.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="pdf/bread.html" target="blank"> 
+                     <button type="button">VIEW</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img" style="background: url(images/veg.JPG);  background-size:cover; background-position-y: center;"></div>
+                <div class="card-txt">
+                    <span class="date"> 14 days ago</span>
+                    <h2>Vegetarian</h2>
+                    <p> Vegetarian Burrito Bowl with Avocado Crema. Roasted veggies, savory beans and a lime-garlic avocado crema top a bed of cilantro-lime.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="pdf/veg.html" target="blank">
+                        <button type="button">VIEW</button>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card-img" style="background: url(images/icecream.JPG);  background-size:cover; background-position-y: center;"></div>
+                <div class="card-txt">
+                    <span class="date"> 20 days ago</span>
+                    <h2>Ice-Creams</h2>
+                    <p> Frozen dairy food made from cream or butterfat, milk, sugar, and flavourings. Frozen custard and French-type ice creams also contain eggs.</p>
+                </div>
+                <div class="card-btn">
+                    <a href="pdf/icecream.html" target="blank">
+                       <button type="button">VIEW</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+
+        <footer> 
+
+            <p>@2021 Master cook | All Rights Reserved</p>
+
+            <div class="waves">
+             <div class="wave" id="wave1"></div>
+             <div class="wave" id="wave2"></div>
+             <div class="wave" id="wave3"></div>
+             <div class="wave" id="wave4"></div>
+            </div>
+         </footer>
+      
+    </body>
+
+</html>

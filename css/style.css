@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.main{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgb(0,0,0,0.75)) ,url("food.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding-top: 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+   /* margin-top: 20px; */
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width:110px;
+    height: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    cursor: pointer;
+}
+div.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-60%);
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+button{
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid royalblue;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    width: 100%;
+    top: 50%;
+    padding-top: 100px;
+    transform: translateY(-60%);
+    text-align: center;
+}
+span{
+    background: royalblue;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+footer{
+   /* margin-top: 80px;*/
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 60px ; 
+   /* padding: 20px 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wave{
+    
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+
+
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_2
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+footer p{
+    font-size: medium;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+}
